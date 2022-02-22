@@ -103,40 +103,16 @@ describe('[Exercise 5] Seasons', () => {
 });
 
 describe('[Exercise 6] Car', () => {
-	let porsche;
+	let focus;
 	beforeEach(() => {
-		porsche = new utils.Car('porsche', 20, 30); // each test must start with a fresh car
+		focus = new utils.Car('focus', 20, 30); // each test must start with a fresh car
 	});
 	test('[15] driving the car returns the updated odometer', () => {
-    expect(porsche.drive(100)).toBe(100)
-    expect(porsche.drive(100)).toBe(200)
-    expect(porsche.drive(100)).toBe(300)
-    expect(porsche.drive(200)).toBe(500)
-    // expect(porsche.drive(200)).toBe(600)
-
+    
   })
-	test('[16] driving the car uses gas', () => {
-    porsche.drive(600)
-    expect(porsche.drive(1)).toBe(600)
-    expect(porsche.drive(1)).toBe(600)
-    expect(porsche.drive(1)).toBe(600)
-    expect(porsche.tank).toBe(0)
-  })
-	test('[17] refueling allows to keep driving', () => {
-    porsche.drive(600)
-    porsche.refuel(10)
-    porsche.drive(600)
-    expect(porsche.odometer).toBe(900)
-    porsche.refuel(20)
-    porsche.drive(600)
-    expect(porsche.odometer).toBe(1500)
-  })
-  
-	test('[18] adding fuel to a full tank has no effect', () => {
-    porsche.refuel(20000)
-    porsche.drive(1000)
-    expect(porsche.odometer).toBe(600)
-  })
+	test('[16] driving the car uses gas', () => {})
+	test('[17] refueling allows to keep driving', () => {})
+	test('[18] adding fuel to a full tank has no effect', () => {})
 });
 
 describe('[Exercise 7] isEvenNumberAsync', () => {

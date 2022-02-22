@@ -116,7 +116,7 @@ class Car {
 		this.odometer = 0; // car initilizes with zero miles
 		this.tank = tankSize; // car initiazes full of gas
 		// ✨ initialize whatever other properties are needed
-		this.tankSize = tankSize;
+		this.tanksize = tankSize;
 		this.mpg = mpg;
 	}
 
@@ -159,13 +159,14 @@ class Car {
 	refuel(gallons) {
 		const maxGallons = this.tankSize - this.tank;
 		if (gallons <= maxGallons) {
-			this.tank = this.tank + gallons
+			this.tank = this.tank + gallons;
 		} else {
-			this.tank = this.tankSize
+			this.tank = this.tankSize;
 		}
-		return this.tank * this.mpg
+		return this.tank * this.mpg;
 	}
 }
+gallonsThatFit
 /**
  * [Exercise 7] Asynchronously resolves whether a number is even
  * @param {number} number - the number to test for evenness

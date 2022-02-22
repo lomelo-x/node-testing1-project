@@ -121,6 +121,7 @@ describe('[Exercise 6] Car', () => {
     expect(porsche.drive(1)).toBe(600)
     expect(porsche.drive(1)).toBe(600)
     expect(porsche.tank).toBe(0)
+
   })
 	test('[17] refueling allows to keep driving', () => {
     porsche.drive(600)
@@ -131,9 +132,8 @@ describe('[Exercise 6] Car', () => {
     porsche.drive(600)
     expect(porsche.odometer).toBe(1500)
   })
-  
 	test('[18] adding fuel to a full tank has no effect', () => {
-    porsche.refuel(20000)
+    porsche.refuel(2000)
     porsche.drive(1000)
     expect(porsche.odometer).toBe(600)
   })
