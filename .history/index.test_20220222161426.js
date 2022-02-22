@@ -27,6 +27,7 @@ describe('[Exercise 2] trimPropertiesMutation', () => {
     const actual = utils.trimPropertiesMutation(input)
     expect(actual).toEqual(input)
   })
+  expect(actual).toBe(input)
 })
 
 describe('[Exercise 3] findLargestInteger', () => {
