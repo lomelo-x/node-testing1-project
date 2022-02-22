@@ -38,8 +38,8 @@ describe('[Exercise 3] findLargestInteger', () => {
     const actual2 = utils.findLargestInteger(input2)
     const actual3 = utils.findLargestInteger(input3)
     expect(actual).toBe(3)
-    expect(actual2).toBe(4)
-    expect(actual3).toBe(4)
+    expect(actual2).toBe(3)
+    expect(actual3).toBe(3)
   })
 })
 

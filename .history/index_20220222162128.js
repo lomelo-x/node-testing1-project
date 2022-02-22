@@ -44,7 +44,6 @@ function findLargestInteger(integers) {
       result = integers[index].integer
     }
   }
-  return result
 }
 
 class Counter {
