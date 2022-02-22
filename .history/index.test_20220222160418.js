@@ -11,7 +11,7 @@ describe('[Exercise 1] trimProperties', () => {
   test('[2] returns a copy, leaving the original object intact', () => {
     const input = { foo: '  foo ', bar: 'bar ', baz: ' baz' }
     utils.trimProperties(input)
-    expect(input).toEqual({ foo: '  foo ', bar: 'bar ', baz: ' baz' })
+    expect(input).toEqual
   })
 })
 
