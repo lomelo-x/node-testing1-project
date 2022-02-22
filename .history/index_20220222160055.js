@@ -6,12 +6,8 @@
  * EXAMPLE
  * trimProperties({ name: '  jane  ' }) // returns a new object { name: 'jane' }
  */
-function trimProperties(obj) {
+function trimProperties(obj),trimProperties() {
   // ✨ implement
-  for (let prop in obj) {
-    obj[prop] = obj[prop].trim()
-  }
-  return obj
 }
 /**
  * [Exercise 2] trimPropertiesMutation trims in place the properties of an object

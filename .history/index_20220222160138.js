@@ -11,7 +11,6 @@ function trimProperties(obj) {
   for (let prop in obj) {
     obj[prop] = obj[prop].trim()
   }
-  return obj
 }
 /**
  * [Exercise 2] trimPropertiesMutation trims in place the properties of an object
