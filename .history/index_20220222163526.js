@@ -69,7 +69,7 @@ class Counter {
    * counter.countDown() // returns 0
    */
   countDown() {
-    return this.count > 0 ? this.count-- : 0
+    if (this.count > 1)
   }
 }
 
