@@ -95,7 +95,7 @@ class Seasons {
 	 * seasons.next() // returns "summer"
 	 */
 	next() {
-		const result = this.seasons[this.currentSeason];
+		const result = this.season[this.currentSeason];
 		if (this.currentSeason === 3) {
 			this.currentSeason = 0;
 		} else {

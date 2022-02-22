@@ -79,7 +79,7 @@ class Seasons {
 	 */
 	constructor() {
 		this.seasons = ['summer', 'fall', 'winter', 'spring'];
-		this.currentSeason = 0;
+		this.currentSeason = 4;
 	}
 
 	/**
@@ -95,7 +95,7 @@ class Seasons {
 	 * seasons.next() // returns "summer"
 	 */
 	next() {
-		const result = this.seasons[this.currentSeason];
+		const result = this.season[this.currentSeason];
 		if (this.currentSeason === 3) {
 			this.currentSeason = 0;
 		} else {
