@@ -179,11 +179,10 @@ class Car {
  *    // result is false
  * })
  */
-async function isEvenNumberAsync(number) {
+function isEvenNumberAsync(number) {
 	if (number % 2 === 0) {
-    return true
+    return Promise.result
   }
-  return false
 }
 
 module.exports = {

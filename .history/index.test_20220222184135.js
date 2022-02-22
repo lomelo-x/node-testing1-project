@@ -145,7 +145,7 @@ describe('[Exercise 7] isEvenNumberAsync', () => {
     expect(result).toBe(true)
   })
 	
-  test('[20] resolves false if passed an odd number', async () => {
+  test('[20] resolves false if passed an odd number', async, () => {
     const result = await utils.isEvenNumberAsync(3)
     expect(result).toBe(false)
   })
